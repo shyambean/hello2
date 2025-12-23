@@ -2,118 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Rapha IT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Video web</title>
+
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar">
-       <h1 class="logo">Welcome to Rapha IT</h1> 
-       <ul class="nav-link">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="1.html">History of Rapha IT</a></li>
-        <li><a href="2.html">Training</a></li>
-        <li><a href="3.html">Works</a></li>
-        <li class="ctn"><a href="4.html">Contact</a></li>
-       </ul>
-       <img src="menubtn1.jpg" alt="" class="menu-btn">
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <h2>Explore The Wonderful world</h2>
-            <div class="line"></div>
-            <h1>GOD's WONDERFUL GIFT</h1>
-            <a href="#" class="ctn">Learn More</a>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video.mp4.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="beachlogo.jpg" width="5%" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Beach</a></li>
+                <li><a href="#">Peace place</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Kathmandu</h1><br>
+            <a href="#">XR Rider</a> <br>
+             
+  <p>Season give ride his brother Simon.They seems very happy and litbit norvouseness.</p><br>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
         </div>
-    </header>
+    </div>
 
-    <!--== Events ==-->
-    <section class="events">
-        <div class="title">
-          <h1>Our Events</h1> 
-          <div class="line"></div> 
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="event.jpg.jpg" width="70%">
-                <h3>Rapha IT training</h3>
-                <p>We are teaching coding our CDP children from diffrent centers. Sometime we also teach others groups like church youth, college students and school students.  </p>
-                <a href="#" class="ctn">Learn More</a></div>
+    
 
-            <div class="col">
-                <img src="event1.jpg.jpg" width="90%">
-                <h3>Practicing Coding</h3>
-                <p>Studens are Practicing after taking knowledge from teacher and Practicing from youtube. They enjoying to Practicing coding. They said "our future is in coding."  </p>
-                <a href="#" class="ctn">Learn More</a></div>
-            
-        </div>
-    </section>
-
-    <section class="explore">
-        <div class="explore-content">
-        <h1>EXPRIENCE IN THE IT WORLD</h1>
-        <div class="line"></div>
-        <P>Information technology (IT) is a broad professional category covering functions including building communications networks, safeguarding data and information, and troubleshooting computer problems.</P>
-        <a href="#" class="ctn">Learn More</a>
-        </div>
-    </section>
-
-    <section class="tours">
-        <div class="row">
-            <div class="col content-col">
-                <h1>Our IT TOURS & DESTINATION</h1>
-                <div class="line"></div>
-                <P>"Tours and destinations" refers to the planning and execution of trips to various locations, which can include organized activities like guided tours, treks, or excursions.</P>
-                <a href="#" class="ctn">Learn More</a>
-            </div>
-        <div class="col image-col">
-        <div class="image-gallery">
-            <img src="exp1.jpg.jpg">
-            <img src="exp2.jpg.jpg">
-            <img src="exp3.jpg.jpg">
-            <img src="exp4.jpg.JPG">
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="footer">
-        <p>Bhaisepati VIP Rd.-25 second floor, Lalitpur, Nepal | contact number : 9763-391745 | Email : raphait@gmail.com</p>
-        <p>Copyright @ 2025 Outdoor Adventure</p>
-    </section>
-
-
-
-    <script>
-        const menuBtn =document.querySelector('.menu-btn')
-        const navlink =document.querySelector('.nav-link')
-
-        menuBtn.addEventListener('click',()=>{
-            navlink.classList.toggle('mobile-menu')
-        })
-    </script>
-
-    <div id="disqus_thread"></div>
 <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://rapha-1-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
 
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+    
 </body>
 </html>
